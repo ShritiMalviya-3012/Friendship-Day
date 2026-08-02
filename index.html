@@ -630,7 +630,6 @@ async function loadAllQuizResponses(){
 }
 
 /* ---------------- quiz ---------------- */
-<form action = "https://formsubmit.co/shriti.malviya30@gmail.com" method = "POST" class = "card">
 const QUIZ_QUESTIONS = [
   {id:'since', type:'text', q:'Since when do we know each other?', placeholder:"e.g. 2016, freshman year, that one rainy Tuesday..."},
   {id:'memory', type:'textarea', q:"What's your favorite memory of us?", placeholder:'Spill it 👀'},
@@ -662,7 +661,7 @@ function buildQuiz(){
     if(q.type==='text'){
       const input = document.createElement('input');
       input.className = 'quiz-input';
-      input.type = 'text'; name = "Name"
+      input.type = 'text';
       input.placeholder = q.placeholder || '';
       input.addEventListener('input', ()=>{ quizAnswers[q.id] = input.value; });
       card.appendChild(input);
@@ -756,7 +755,6 @@ async function finishQuiz(){
 }
 document.getElementById('quizContinueBtn').addEventListener('click', nextPage);
 buildQuiz();
-</form>
 
 /* owner view */
 const ownerModal = document.getElementById('ownerModal');
