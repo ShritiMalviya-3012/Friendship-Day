@@ -370,8 +370,8 @@
       <p class="note-label">a note, just for you</p>
       <p class="note-open" id="noteOpen"></p>
       <ul class="note-reasons" id="noteReasons"></ul>
-      <p class="note-close" id="noteClose">You didn't just become my friend. You became home. Thank you for being exactly who you are.</p>
-      <p class="note-sign">— always, me 💛</p>
+      <p class="note-close" id="noteClose">You didn't just become my friend. You became the one who annoys me but always supports me. Thank you for being exactly who you are.</p>
+      <p class="note-sign">— By, Shri 💛</p>
     </article>
     <button class="next-zone" id="nextZone1" aria-label="Next page">
       <span class="next-arrow">›</span>
@@ -413,7 +413,7 @@
     <div class="finale-content">
       <h2 class="finale-title">Yay! 🎉</h2>
       <div class="cat-stage finale-cat" id="catStage4"></div>
-      <p class="finale-message" id="finaleMessage">Here's to us, bestie. Thank you for every memory so far — the good, the chaotic, and the ones we still laugh about at 1am. Here's to many, many more.</p>
+      <p class="finale-message" id="finaleMessage">Here's to us, bestie. Thank you for every memory so far — the good, the chaotic, and the ones we still laugh about. Here's to many, many more.</p>
       <p class="finale-signoff">Happy Friendship Day</p>
       <button class="btn-top" id="btnTop">↑ back to top</button>
     </div>
@@ -441,7 +441,7 @@ const CONFIG = {
   friendName: "bestie",
   // Paste a hosted image URL or base64 data URI of your actual meme cat
   // here and it will replace the illustrated cat everywhere automatically.
-  catImageUrl: ""
+  catImageUrl: "images.jpg"
 };
 
 const NOTE_OPEN = `Hey ${CONFIG.friendName}, just so it's said out loud for once —`;
@@ -634,10 +634,10 @@ async function loadAllQuizResponses(){
 const QUIZ_QUESTIONS = [
   {id:'since', type:'text', q:'Since when do we know each other?', placeholder:"e.g. 2016, freshman year, that one rainy Tuesday..."},
   {id:'memory', type:'textarea', q:"What's your favorite memory of us?", placeholder:'Spill it 👀'},
-  {id:'word', type:'choice', q:'Pick one word for our friendship', options:['Chaotic','Loyal','Iconic','Ride-or-die','Unbreakable','Weird (affectionately)']},
+  {id:'word', type:'choice', q:'Pick one word for our friendship', options:['Chaotic','Loyal','Iconic','Unbreakable','Weird (affectionately)']},
   {id:'rating', type:'rating', q:'Rate our friendship (be honest)', max:10},
   {id:'joke', type:'text', q:"One inside joke only we'd get", placeholder:'...'},
-  {id:'genre', type:'choice', q:"If we were a movie, it'd be a...", options:['Comedy','Rom-com','Buddy action flick','Slow-burn drama','Sci-fi chaos']}
+  {id:'genre', type:'choice', q:"If we were a movie character, it'd be ...", placeholder:['Be real']}
 ];
 let quizAnswers = {};
 let quizIndex = 0;
